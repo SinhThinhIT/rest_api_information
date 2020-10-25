@@ -1,0 +1,29 @@
+- Restful API là  một kiểu cấu trúc cung cấp các quy tắc để xây dựng web service.
+
+- REST định nghĩa dữ liệu dưới dạng XML hoặc JSON và truyền thông qua mạng internet sử dụng giao thức HTTP.
+
+- Các phương thức chính trong Restful API là GET, PUT, POST
+
+ + GET : để lấy thông tin theo id hoặc tất cả, truy xuất dữ liệu trong API. => Các thông tin trả ra màn hình sẽ thêm các tham số
+(thường sẽ lấy request parameters( @RequestParams, @Params, @PathVariable)
+
+ + POST: lưu trữ thông tin hoặc cập nhập data vào database.
+ (@RequestBody), vào phần Headers
+ 
+ + PUT: Để sửa thông tin theo id hoặc 1 đối tượng nào đó
+ (@RequestBody)
+
+
+ + GET is used to request data from a specified resource.
+ + GET is one of the most common HTTP methods.
+ + POST is used to send data to a server to create/update a resource.
+ + POST is one of the most common HTTP methods.
+ 
+ 
+- Giao tiếp User – Web Service:
+
+1.Client gửi (request) yêu cầu về một tài nguyên cụ thể nào đó tới Web Service sử dụng các phương thức của HTTP
+2.Web Service xác định phương thức, tài nguyên và thực hiện các hành
+động CRUD tương ứng
+3.Web Service gửi (response) về cho client tài nguyên theo định dạng mà
+client yêu cầu
